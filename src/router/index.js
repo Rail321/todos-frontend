@@ -1,6 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-const routes = []
+import Todos from '@/views/Todos.vue'
+
+const routes = [
+  {
+    to: '/todos',
+    name: 'Todos',
+    component: Todos
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
